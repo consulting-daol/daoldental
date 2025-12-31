@@ -46,9 +46,9 @@ export default function Home() {
                   Advanced Care for Your Smile
                 </h1>
                 <p className="max-w-[600px] text-black py-4 md:text-xl">
-                  Welcome to Daol Dental Clinic. We combine cutting-edge
+                  Welcome to Daol Dental. We combine cutting-edge
                   technology with compassionate care to provide exceptional
-                  dental services for your entire family.
+                  dental services for our patients.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -72,7 +72,7 @@ export default function Home() {
                 src="/images/dental-hero-no-bg.png"
                 width={800}
                 height={800}
-                alt="Modern Daol Dental Clinic reception area with comfortable seating and blue accents"
+                alt="Modern Daol Dental reception area with comfortable seating and blue accents"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -110,8 +110,8 @@ export default function Home() {
                 Advanced Technology
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed mx-auto">
-                At Daol Dental Clinic, we invest in cutting-edge technology to
-                enhance diagnosis accuracy, treatment efficiency, and patient
+                At Daol Dental, we invest in cutting-edge technology to
+                enhance diagnostic accuracy, treatment efficiency, and patient
                 comfort.
               </p>
             </div>
@@ -164,7 +164,7 @@ export default function Home() {
                 src="/images/dental-tech.png"
                 width={500}
                 height={400}
-                alt="Daol Dental Clinic's advanced 3D imaging system and digital scanner"
+                alt="Daol Dental's advanced 3D imaging system and digital scanner"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -327,7 +327,7 @@ export default function Home() {
               >
                 <Image
                   src={service.image || '/placeholder.svg'}
-                  alt={`${service.title} - Daol Dental Clinic service`}
+                  alt={`${service.title} - Daol Dental service`}
                   width={300}
                   height={200}
                   className="aspect-video object-cover w-full"
@@ -389,7 +389,7 @@ export default function Home() {
                 <div className="aspect-square overflow-hidden">
                   <Image
                     src={member.image || '/placeholder.svg'}
-                    alt={`${member.name} - ${member.role} at Daol Dental Clinic`}
+                    alt={`${member.name} - ${member.role} at Daol Dental`}
                     width={300}
                     height={300}
                     className="h-full w-full object-cover transition-all hover:scale-105"
@@ -521,7 +521,7 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div>
               <h3 className="text-2xl font-bold text-[#222176] mb-4 md:text-4xl">
-                Daol Dental Clinic
+                Daol Dental
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
@@ -593,7 +593,7 @@ export default function Home() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                aria-label="Map showing the location of Daol Dental Clinic in Vancouver"
+                aria-label="Map showing the location of Daol Dental"
               ></iframe>
 
               <div className="mt-4">
@@ -616,7 +616,7 @@ export default function Home() {
           </div>
           <div className="mt-12 border-t border-blue-100 pt-6 text-center text-gray-500">
             <p>
-              © {new Date().getFullYear()} Daol Dental Clinic. All rights
+              © {new Date().getFullYear()} Daol Dental. All rights
               reserved.
             </p>
           </div>

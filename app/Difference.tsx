@@ -17,7 +17,7 @@ export default function Difference() {
         <div className="txt_wrap" data-aos="fade-up">
           <div className="flex flex-col gap-4 md:text-2xl">
             <div>
-              <p className="sub_ttl">What makes Daol different?</p>
+              <p className="sub_ttl">What makes Daol Dental different?</p>
               <strong className="text-[#222176] text-2xl md:text-4xl">
                 Because we restore <b>molars</b>
               </strong>
@@ -28,7 +28,7 @@ export default function Difference() {
                 We perfected 0.1mm-thin restorations
                 <br />
                 over 10 years ago. <br />
-                Daol has advanced precision processing <br />
+                Daol Dental has advanced precision processing <br />
                 technology to restore even molars.
               </p>
             </div>
@@ -45,7 +45,7 @@ export default function Difference() {
           <li className="flex justify-between bg-[#e1e2ed] md:text-2xl w-full p-5 md:p-8 rounded-3xl md:w-[455px]">
             <div className="flex items-end">
               <div>
-                <strong className="text-[#222176]">Daol</strong> is <br />
+                <strong className="text-[#222176]">Daol Dental</strong> is <br />
                 not laminate
               </div>
             </div>
@@ -54,7 +54,7 @@ export default function Difference() {
                 src="/images/difference-1.png"
                 width={60}
                 height={60}
-                alt="Modern Daol Dental Clinic reception area with comfortable seating and blue accents"
+                alt="Modern Daol Dental reception area with comfortable seating and blue accents"
                 className="object-cover"
               />
             </div>
@@ -71,7 +71,7 @@ export default function Difference() {
                 src="/images/difference-2.png"
                 width={60}
                 height={60}
-                alt="Modern Daol Dental Clinic reception area with comfortable seating and blue accents"
+                alt="Modern Daol Dental reception area with comfortable seating and blue accents"
                 className="object-cover"
               />
             </div>
@@ -87,7 +87,7 @@ export default function Difference() {
                 src="/images/difference-3.png"
                 width={60}
                 height={60}
-                alt="Modern Daol Dental Clinic reception area with comfortable seating and blue accents"
+                alt="Modern Daol Dental reception area with comfortable seating and blue accents"
                 className="object-cover"
               />
             </div>

@@ -8,8 +8,8 @@ import Header from './client-layout';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Daol Dental Clinic',
-  description: 'Advanced dental care with a personal touch',
+  title: 'Daol Dental - Quality Dental Care',
+  description: 'Leading dental care and treatment services',
   generator: 'v0.dev',
 };
 

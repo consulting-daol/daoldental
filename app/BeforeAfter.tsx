@@ -59,7 +59,7 @@ export default function BeforeAfter() {
               src="/images/ba-sample.jpg"
               width={650}
               height={369}
-              alt="Modern Daol Dental Clinic reception area with comfortable seating and blue accents"
+              alt="Modern Daol Dental reception area with comfortable seating and blue accents"
               className="rounded-3xl object-cover"
             />
           </div>

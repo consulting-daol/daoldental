@@ -5,26 +5,19 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const reasons = [
+const features = [
   {
-    title: 'Scale',
-    heading: 'A Large-Scale Dental Hospital with 14 Floors in Vancouver',
+    title: 'Excellence',
+    heading: 'Commitment to Quality Care',
     description:
-      'Daol Dental is not a small clinic—its a comprehensive dental hospital across 14 floors.',
+      'We are dedicated to providing exceptional dental services with the latest technology and techniques.',
     img: '/images/new_main/why_minish_pic01.jpg',
   },
   {
-    title: 'Trust',
-    heading: '10-Year Warranty Backed by Authentic Certification',
-    description:
-      'We guarantee our dental treatments with up to 10 years of certified coverage—because your trust matters.',
-    img: '/images/new_main/why_minish_pic02.jpg',
-  },
-  {
     title: 'Experience',
-    heading: 'Over 20 Years of Dental Expertise',
+    heading: 'Trusted Dental Professionals',
     description:
-      'Since 2005, Daol Dental has grown by listening to patients and delivering results.',
+      'Our team brings years of experience and expertise to ensure the best outcomes for every patient.',
     img: '/images/new_main/why_minish_pic03.jpg',
   },
 ];
@@ -35,91 +28,47 @@ export default function WhyChooseDaolDental() {
   }, []);
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
-      <div className="container px-4 md:px-6">
-        {/* 제목 영역 */}
-        <div data-aos="fade-up" className="mb-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-[#222176] mb-4">
+    <section className="py-6 sm:py-8 md:py-10 lg:py-12 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 max-w-5xl">
+        <div className="text-center mb-6 sm:mb-8 md:mb-10">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-[#222176] mb-3 sm:mb-4">
             Why so many{' '}
-            <span className="font-black">patients choose Daol Dental</span>
+            <span className="font-black">choose Daol Dental</span>
           </h2>
-          <p className="max-w-3xl mx-auto text-gray-700 text-base sm:text-lg md:text-xl font-medium">
-            <b>
-              [ One-Day Treatments / Advanced Implants / Specialized
-              Orthodontics ]
-            </b>
-            <br />
-            For complex and high-level dental procedures, trust Daol Dental
-            Hospital.
-          </p>
+          <div className="space-y-2 sm:space-y-2.5 md:space-y-3">
+            <p className="max-w-2xl mx-auto text-gray-700 text-xs sm:text-sm md:text-base font-medium leading-relaxed">
+              <b>"We are committed to providing the highest quality dental care."</b>{' '}
+              For comprehensive and advanced dental services, trust Daol Dental.
+            </p>
+            <p className="max-w-2xl mx-auto text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed">
+              Experience personalized care from our team of dedicated dental professionals.
+            </p>
+          </div>
         </div>
-
-        {/* 3개 카드 */}
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-3 mb-16">
-          {reasons.map((item, idx) => (
-            <div
-              key={idx}
-              className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
-              data-aos="fade-up"
-              data-aos-delay={idx * 100}
-            >
-              <Image
-                src={item.img}
-                alt={item.title}
-                width={500}
-                height={300}
-                className="w-full h-48 md:h-64 object-cover"
-              />
-              <div className="absolute inset-0 bg-[#222176] bg-opacity-60" />
-              <div className="absolute top-4 left-4 right-4 text-white z-10">
-                <span className="inline-block mb-2 text-[10px] sm:text-xs font-semibold px-3 py-1 bg-[#222176] rounded-full w-fit">
-                  {item.title}
-                </span>
-                <h3 className="text-sm sm:text-base font-bold leading-snug mb-1">
-                  {item.heading}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
+          {features.map((feature, index) => (
+            <div key={index} className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg hover:bg-gray-50 transition-colors border border-gray-100">
+              <div className="flex-shrink-0">
+                <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-lg overflow-hidden">
+                  <Image
+                    src={feature.img}
+                    alt={feature.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 48px, (max-width: 768px) 56px, 64px"
+                  />
+                </div>
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-1.5 sm:mb-2 leading-snug">
+                  {feature.heading}
                 </h3>
-                <p className="text-xs sm:text-sm text-white text-opacity-90 leading-relaxed">
-                  {item.description}
+                <p className="text-xs sm:text-sm md:text-base text-gray-600 leading-relaxed">
+                  {feature.description}
                 </p>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* 진료팀 소개 */}
-        <div
-          className="bg-white rounded-2xl border border-gray-200 shadow-md overflow-hidden px-4 py-8 sm:px-6 md:px-10 md:py-10"
-          data-aos="fade-up"
-          data-aos-delay="400"
-        >
-          <div className="flex flex-col items-center text-center space-y-6">
-            <div className="w-full max-w-3xl">
-              <span className="inline-block bg-[#222176] text-white text-[11px] sm:text-xs font-semibold px-4 py-1 rounded-full mb-3">
-                Expert Care & Convenience
-              </span>
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-900 mb-2">
-                12 dental specialists provide evening care 365 days a year to
-                support your treatment needs.
-              </h3>
-              <p className="text-gray-600 text-sm md:text-base">
-                From complex orthodontics to high-difficulty implants, our team
-                of 12 certified specialists is available every day, offering
-                late-night treatment to ensure your convenience.
-              </p>
-            </div>
-
-            <div className="w-full max-w-5xl mt-4">
-              <div className="rounded-xl overflow-hidden">
-                <Image
-                  src="/images/new_main/group.png"
-                  alt="Daol Dental Specialists Group"
-                  width={1200}
-                  height={300}
-                  className="w-full h-[160px] sm:h-[200px] md:h-[220px] object-contain bg-white"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

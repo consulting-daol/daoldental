@@ -86,26 +86,20 @@ export default function RegisterPage() {
 
   if (isSubmitted) {
     return (
-      <div className="flex min-h-screen flex-col">
-        <div className="flex-1 flex items-center justify-center p-4">
-          <div className="max-w-md w-full mx-auto text-center space-y-6">
-            <CheckCircle2 className="mx-auto h-16 w-16 text-green-500" />
-            <h1 className="text-2xl font-bold text-blue-600">
-              Appointment Request Submitted
+      <section className="py-12 md:py-24 lg:py-32 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold text-black md:text-5xl">
+              Register for Appointment at Daol Dental
             </h1>
             <p className="text-gray-500">
               Thank you for submitting your appointment request. The Daol Dental
               team will contact you shortly to confirm your appointment. We look
-              forward to seeing you soon!
+              forward to welcoming you soon!
             </p>
-            <Link href="/">
-              <Button className="bg-blue-600 hover:bg-blue-700">
-                Return to Home
-              </Button>
-            </Link>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 

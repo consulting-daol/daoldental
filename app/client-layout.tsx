@@ -31,7 +31,7 @@ const Header = () => {
             width={100}
             height={100}
           /> */}
-            <span className="text-2xl font-bold">DAOL DENTAL CLINIC</span>
+            <span className="text-2xl font-bold">DAOL DENTAL</span>
           </Link>
         </div>
 
